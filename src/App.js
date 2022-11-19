@@ -29,7 +29,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="Main">
-        <Router basename="/">
+        <Router>
           <div className="App">
             <Route path="*" render={(props) => <Header {...props} />} />
             <Route path="/" exact render={(props) => <HomePage {...props} />} />
