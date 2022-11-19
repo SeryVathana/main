@@ -31,8 +31,12 @@ export default class App extends Component {
       <div className="Main">
         <Router>
           <div className="App">
-            {/* <Route path="*" render={(props) => <Header {...props} />} /> */}
-            <Route path="/" exact render={(props) => <HomePage {...props} />} />
+            <Route path="*" render={(props) => <Header {...props} />} />
+            <Route
+              path="/main"
+              exact
+              render={(props) => <HomePage {...props} />}
+            />
             <div className="blog_page">
               <Route
                 exact
